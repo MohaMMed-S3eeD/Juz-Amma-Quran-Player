@@ -83,3 +83,55 @@ input[type="range"]::-webkit-slider-thumb:hover {
   width: 12px;
   margin-top: -4.5px;
 }
+
+/* Update container max-width */
+.container {
+  width: 100%;
+  max-width: 75%;  /* reduced from 85% */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Add base font size adjustment */
+html {
+  font-size: 14px;
+}
+
+/* Update video container styles */
+.video-container {
+  width: 100%;
+  max-width: 320px; /* much smaller width */
+  height: 240px; /* fixed height */
+  margin: 1rem auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-container video,
+.video-container > div {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 12px;
+  }
+
+  .video-container {
+    max-width: 280px;
+    height: 210px;
+  }
+}
