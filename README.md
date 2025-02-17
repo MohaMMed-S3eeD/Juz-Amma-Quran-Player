@@ -2,6 +2,10 @@
 
 A modern, interactive React-based Quran player specifically designed for Juz Amma (جزء عم). This application provides a beautiful interface for listening to Quranic recitations with precise surah navigation and playback controls.
 
+## Live Demo
+
+🌐 [Try it out here](https://juz-amma-quran-player.vercel.app/)
+
 ## Features
 
 - 🎯 Precise surah-by-surah navigation
